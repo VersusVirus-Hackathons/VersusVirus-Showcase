@@ -4,11 +4,11 @@
   "description": "A collection of all submitted projects from the VersusVirus hackathons.",
   "main": "scrape.js",
   "devDependencies": {
+    "eta": "^1.1.1",
     "firebase-tools": "^8.4.2",
     "website-scraper": "^4.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "npx firebase serve --only hosting",
     "deploy": "npx firebase deploy"
   },
@@ -17,7 +17,7 @@
     "url": "git+https://github.com/VersusVirus-Hackathons/VersusVirus-Showcase.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nicolas Zanotti",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/VersusVirus-Hackathons/VersusVirus-Showcase/issues"
