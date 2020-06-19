@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
     <title><%~ it.title %></title>
 </head>
 <body>
-    <h1><%~ it.title %></h1>
-    <p><%~ it.tagline %></p>
+    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
+    <p property="datePublished"><small><%= it.datePublished %></small></p>
+    <h1 property="name"><%~ it.title %></h1>
+    <p property="abstract"><strong><%~ it.tagline %></strong></p>
+    <section property="description">
+        <p><% it.description %></p>
+        <p><%~ it.technologiesUsed %></p>
+        <p><%~ it.obstacles %></p>
+        <p><%~ it.accomplishments %></p>
+        <p><%~ it.learnings %></p>
+        <p><%~ it.nextSteps %></p>
+    </section>
+    <p property="video"><%~ it.videoUrl %></p>
+    <p property="url"><%~ it.urls %></p>
+    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
+    </div>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
+    <title>Fact-O-Meter</title>
+</head>
+<body>
+    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
+    <p property="datePublished"><small>undefined</small></p>
+    <h1 property="name">Fact-O-Meter</h1>
+    <p property="abstract"><strong>Fake News? Look at Pinocchio's nose!</strong></p>
+    <section property="description">
+        <p></p>
+        <p>The neural network is build with python and uses the Tensorflow library. The library is well documented and there are plenty of examples and good tutorials all around the internet. We trained the network with a Kaggle-Dataset. To be compliant with the (Swiss) GDPR we had to set up a reverse proxy with apache2 to encrypt the traffic via SSL (The webserver of python does not support SSL encryption).</p>
+        <p>The neural network was quite slow initially and each request had an average response time from 5 seconds. Properly initializing the network and tweaking a few optimizations gave us a really performant server and reduced the response time to milliseconds. At the moment we are not finally satisfied with the accuracy of the neural network (also if it is clearly distinguish if some information is clearly fake-news - we just have to train the final threshold. More training and/or another model is neccessary for the release.</p>
+        <p>We are proud that we brought this idea so far that it can be directly implemented, with a small team of 3 people in this short timeframe Happy that we brought so many components in one overall solution together (possibility to detect fake news, offer additional source ideas for a second opinion and even think about a “ask an expert”-button on a future stage. Current pilots can be rolled out to 85 % of all desktop users and 75 % of all mobile users within some weeks. A first version on Chrome browser is already working.</p>
+        <p>We learned how to make Chrome Extensions (we never did that bevore) and did research for how to adapt it into other browsers so we can get Fact-O-Meter running for 85 % of all desktop and more than 75 % of all mobile users.
+
+How to build a functioning prototype in python
+
+We've learned a lot about neural networks and how big the online community is that shares network models and various datasets.
+</p>
+        <p>First, we want to develop fully functional extensions for all common browsers, because the prototype is only available as a Chrome extension. Next, we want to tune our neural network model so it's at least 95% accurate. After that, a continuous automatic online learning mechanism would be beneficial to guarantee good accuracy also for the latest topics. And as a final step, we want to port the system to the mobile platform. An ultimate goal would be the direct implementation of our service into the browsers by the company itself.</p>
+    </section>
+    <p property="video">https://www.youtube.com/watch?v=Ljxojs-r_yU</p>
+    <p property="url">https://github.com/csaq5507/fake_o_meter,https://drive.google.com/file/d/107scqS6OHoizS6jBGMyutjj6xoR_QQFg/view,https://drive.google.com/file/d/1MzMo5CHtWPb2oKmAcdvm0vQnA3lCWEOq/view,https://www.kaggle.com/c/fake-news/overviewd,https://drive.google.com/drive/folders/1k3wsfXHZCh3AVxjcTbi9xTNH8BccgcNa?usp=sharing</p>
+    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
+    </div>
+</body>
+</html>
