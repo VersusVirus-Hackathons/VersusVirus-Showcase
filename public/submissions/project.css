@@ -1,8 +1,13 @@
 :root {
-    --lh: 1.4rem;
-    --max-lines: 2;
     box-sizing: border-box;
-    line-height: var(--lh);
+    font-size: 100%;
+    line-height: 1.4;
+}
+
+@media only screen and (min-width: 768px) {
+    :root {
+        font-size: 120%;
+    }
 }
 
 *, *:before, *:after {
@@ -24,8 +29,7 @@ body {
 .gutter {
     max-width: 1200px;
     margin: 0 auto;
-    /* border: 1px solid blue; */
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .page-header>.gutter, .page-footer>.gutter {
@@ -67,7 +71,6 @@ body {
     background-color: #fff;
     padding: 1rem;
     width: 100%;
-
     display: flex;
     flex-direction: column;
 }
@@ -95,6 +98,8 @@ body {
 }
 
 .tagline {
+    --lh: 1.5rem;
+    --max-lines: 2;
     position: relative;
     max-height: calc(var(--lh) * var(--max-lines));
     overflow: hidden;
@@ -114,6 +119,12 @@ body {
 .page-footer>.gutter>p {
     width: 100%;
     text-align: center;
+    font-size: 80%;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: inherit;
 }
 
 
@@ -160,4 +171,14 @@ Topic Colors
 .topic.supportrequestforhelp {
     color: #102046;
     background-color: #9CC7FF;
+}
+
+/*
+----------------------------------------------------------
+Project page content
+----------------------------------------------------------
+*/
+.urls {
+    max-width: 100%;
+    overflow: hidden;
 }

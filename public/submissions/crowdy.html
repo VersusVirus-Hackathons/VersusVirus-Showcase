@@ -4,34 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css" />
-    <title>Crowdy</title>
+    <title>Crowdy — Versus Virus</title>
+    <style>
+        .page-header .gutter,
+        .page-main .gutter,
+        .page-footer .gutter {
+            max-width: 40em;
+        }
+    </style>
 </head>
 <body>
-    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
-    <p property="datePublished"><small>2020-05-31</small></p>
-    <h1 property="name">Crowdy</h1>
-    <p property="abstract"><strong>Sharing Public Spaces</strong></p>
-    <section property="description">
-        <h3>Description</h3>
-        <p>Crowdy aims at a safe usage of public spaces.The core is our heatmap showing occupancy rate data of specific destinations. This way, users can make informed and sound decisions upon where to go - and, meanwhile, get rewarded for physical distancing by collecting virtual points. This is all possible without user tracking and supports sustainable personal responsibility in Switzerland. Moreover, for this service, there is no need for registration. However, once users register, they can access the addition of monetary rewards. Virtual points, accumulated through low-risk behaviour, can be redeemed with real rewards at local
+    <header class="page-header">
+        <div class="gutter">
+            <a href="https://www.versusvirus.ch/">
+                <img src="../logo.gif" alt="logo" title="Versus Virus" height="40" width="120" style="margin-top:4px;margin-bottom:-4px" />
+            </a>
+        </div>
+    </header>
+    <main class="page-main" vocab="http://schema.org/" typeof="CreativeWork">
+        <div class="gutter">
+            <p property="datePublished"><small><time datetime="2020-05-31">Sun May 31 2020</time></small></p>
+            <h1 property="name">Crowdy</h1>
+            <p property="abstract"><strong>Sharing Public Spaces</strong></p>
+            <h3>Video</h3>
+            <p property="video"><a href="https://youtu.be/i_1Lc0IrE08" target="_blank">https://youtu.be/i_1Lc0IrE08</a></p>
+            <section property="description">
+                <h3>Description</h3>
+                <p>Crowdy aims at a safe usage of public spaces.The core is our heatmap showing occupancy rate data of specific destinations. This way, users can make informed and sound decisions upon where to go - and, meanwhile, get rewarded for physical distancing by collecting virtual points. This is all possible without user tracking and supports sustainable personal responsibility in Switzerland. Moreover, for this service, there is no need for registration. However, once users register, they can access the addition of monetary rewards. Virtual points, accumulated through low-risk behaviour, can be redeemed with real rewards at local
 businesses – and in so doing boost sales and spending. In the long run, it can even help to support the CRM and CSR of the local business partners since they promote and award sustainable behaviour.</p>
-        <h3>Technologies used</h3>
-        <p>HTML/CSS, Javascript, vue.js, Google Maps, Open Street Maps, flask, Leaflet, Python, Flutter</p>
-        <h3>Accomplishments</h3>
-        <p>We are very proud that we got funding for our project from the Versus Virus organisation. We are also proud of our accomplishments with the elaborate rewarding system and the overall concept that, when implemented, benefits a lot of stakeholders: not only users but also local businesses that profit from increased revenues. In addition we are proud that we were able to organise our participation once again and improve Crowdy during the second VV hackathon with the help of a new team member who supports our IT-team. We also are proud that we have build our new webpage www.crowdy.ch, which we plan to improve even further in the next days. 
+                <h3>Technologies used</h3>
+                <p>HTML/CSS, Javascript, vue.js, Google Maps, Open Street Maps, flask, Leaflet, Python, Flutter</p>
+                <h3>Accomplishments</h3>
+                <p>We are very proud that we got funding for our project from the Versus Virus organisation. We are also proud of our accomplishments with the elaborate rewarding system and the overall concept that, when implemented, benefits a lot of stakeholders: not only users but also local businesses that profit from increased revenues. In addition we are proud that we were able to organise our participation once again and improve Crowdy during the second VV hackathon with the help of a new team member who supports our IT-team. We also are proud that we have build our new webpage www.crowdy.ch, which we plan to improve even further in the next days. 
 </p>
-        <h3>Obstacles</h3>
-        <p>Currenty, we are using Google's popularity data. We aim, however, at working with mobilephone data which is a lot more accurate. Therefore, our biggest challenge is to get access to this kind of data. We already started to reach out to potential partners and got first entrys. </p>
-        <h3>Learnings</h3>
-        <p>We are constantly learning as a team and on the individual level. Some of the biggest learnings so far are, for instance, learning new programme languages, figuring out how to work best remotely, setting up frameworks for motion data and producing compact mock-up videos.</p>
-        <h3>Next steps</h3>
-        <p>The next step is to get the mobilephone data from a telecommunication company with which we already got in contact. After that, we would finalise our predicitve algorithms, start our marketing campaign and launch the app on the appstore/android playstore. </p>
-    </section>
-    <h3>Video</h3>
-    <p property="video">https://youtu.be/i_1Lc0IrE08</p>
-    <h3>Sources</h3>
-    <p property="url">www.crowdy.ch,https://github.com/KatCe/Crowdless-flutter-Prototype</p>
-    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
-    </div>
+                <h3>Obstacles</h3>
+                <p>Currenty, we are using Google's popularity data. We aim, however, at working with mobilephone data which is a lot more accurate. Therefore, our biggest challenge is to get access to this kind of data. We already started to reach out to potential partners and got first entrys. </p>
+                <h3>Learnings</h3>
+                <p>We are constantly learning as a team and on the individual level. Some of the biggest learnings so far are, for instance, learning new programme languages, figuring out how to work best remotely, setting up frameworks for motion data and producing compact mock-up videos.</p>
+                <h3>Next steps</h3>
+                <p>The next step is to get the mobilephone data from a telecommunication company with which we already got in contact. After that, we would finalise our predicitve algorithms, start our marketing campaign and launch the app on the appstore/android playstore. </p>
+            </section>
+            <h3>Sources</h3>
+            <ul class="urls">
+                                <li property="url"><a href="www.crowdy.ch" target="_blank">www.crowdy.ch</a></li>
+                                <li property="url"><a href="https://github.com/KatCe/Crowdless-flutter-Prototype" target="_blank">https://github.com/KatCe/Crowdless-flutter-Prototype</a></li>
+                            </ul>
+            <a class="back" href="/submissions">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z" fill="#50555C"></path>
+                </svg>
+                <span>Back to submissions</span>
+            </a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="gutter">
+            <p>© <a href="https://versusvirus.ch" property="maintainer">Versus Virus</a> 2020. Made with ❤ in Switzerland.</p>
+        </div>
+    </footer>
 </body>
 </html>

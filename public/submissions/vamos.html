@@ -4,19 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css" />
-    <title>Vamos?</title>
+    <title>Vamos? — Versus Virus</title>
+    <style>
+        .page-header .gutter,
+        .page-main .gutter,
+        .page-footer .gutter {
+            max-width: 40em;
+        }
+    </style>
 </head>
 <body>
-    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
-    <p property="datePublished"><small>2020-05-31</small></p>
-    <h1 property="name">Vamos?</h1>
-    <p property="abstract"><strong>check crowd density of places online</strong></p>
-    <section property="description">
-        <h3>Description</h3>
-        <p>Develop a high-quality, low-cost, easily implementable digital solution that measures crowd density real-time, that both analyzes and visualizes this data on smartphone apps while preserving data-privacy. Develop a historical and forecasting system for local business managers and public authorities.
+    <header class="page-header">
+        <div class="gutter">
+            <a href="https://www.versusvirus.ch/">
+                <img src="../logo.gif" alt="logo" title="Versus Virus" height="40" width="120" style="margin-top:4px;margin-bottom:-4px" />
+            </a>
+        </div>
+    </header>
+    <main class="page-main" vocab="http://schema.org/" typeof="CreativeWork">
+        <div class="gutter">
+            <p property="datePublished"><small><time datetime="2020-05-31">Sun May 31 2020</time></small></p>
+            <h1 property="name">Vamos?</h1>
+            <p property="abstract"><strong>check crowd density of places online</strong></p>
+            <h3>Video</h3>
+            <p property="video"><a href="https://drive.google.com/file/d/1l1hcbtg3KAp3nSXRq4xEc6CtS2oQ5Mkz/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1l1hcbtg3KAp3nSXRq4xEc6CtS2oQ5Mkz/view?usp=sharing</a></p>
+            <section property="description">
+                <h3>Description</h3>
+                <p>Develop a high-quality, low-cost, easily implementable digital solution that measures crowd density real-time, that both analyzes and visualizes this data on smartphone apps while preserving data-privacy. Develop a historical and forecasting system for local business managers and public authorities.
 </p>
-        <h3>Technologies used</h3>
-        <p>- bluetooth low energy (ble)
+                <h3>Technologies used</h3>
+                <p>- bluetooth low energy (ble)
 - raspberry Pi
 - mathematical triangulation
 - signal hashing (for privacy)
@@ -24,36 +41,47 @@
 - python, javascript, golang, tcp/ip, redis/mongodb (databases)
 - ios/android (for apps)
 </p>
-        <h3>Accomplishments</h3>
-        <p>- Having Prof. Dr. G. Keith Still on the advisory board and the quality of the entire advisory board (Dr. Federico Botta, lecturer; Marc Lehmann, MSc Insurance; Dr. med. Li Zhang, President; Oliver Hasler Msc, CEO & Partner Investment Company).
+                <h3>Accomplishments</h3>
+                <p>- Having Prof. Dr. G. Keith Still on the advisory board and the quality of the entire advisory board (Dr. Federico Botta, lecturer; Marc Lehmann, MSc Insurance; Dr. med. Li Zhang, President; Oliver Hasler Msc, CEO & Partner Investment Company).
 - Triangulation measurements with a detection precision of 1 m or better over 30x30 m area (still exploring).
 - Detailed server-client system architecture.
 - Finding the right people at the right time.
 </p>
-        <h3>Obstacles</h3>
-        <p>- Understanding and setting into place a bluetooth low energy architecture that can be used for real-time triangulation.
+                <h3>Obstacles</h3>
+                <p>- Understanding and setting into place a bluetooth low energy architecture that can be used for real-time triangulation.
 - Defining a strategy that balances both the covid-19 response (non-profit) and sustainable aspects (for-profit). Which companies/incubators should we collaborate with and when.
 - Finding the right people to complement a team with good internal people dynamics.
 </p>
-        <h3>Learnings</h3>
-        <p>Crow-density is a very important topic, which has been studied in depth by
+                <h3>Learnings</h3>
+                <p>Crow-density is a very important topic, which has been studied in depth by
 Prof. Dr. G. Keith Still. This topic is not only important for covid-19, but also to elaborate evacuation and safety measures for public places.
 In order to detect and triangulate phone signals we had to learn several new techniques (Bluetooth low energy, Raspberry-Pi, in-memory databases, real-time signal processing)
 </p>
-        <h3>Next steps</h3>
-        <p>- Finish architecture development
+                <h3>Next steps</h3>
+                <p>- Finish architecture development
 - Install web Live Proof-of-Concept Local People Density Detection demos.
 - Enlarge the team with new team members (2-3 people ready to join in the next weeks)
 - Continue with the VersusVirus Incubator process.
 - Secure Funding for Startup Launch.
 - Reach out to Key Stakeholders
 </p>
-    </section>
-    <h3>Video</h3>
-    <p property="video">https://drive.google.com/file/d/1l1hcbtg3KAp3nSXRq4xEc6CtS2oQ5Mkz/view?usp=sharing</p>
-    <h3>Sources</h3>
-    <p property="url">https://drive.google.com/file/d/1HzDhPF1JwobzpHISYWcBd2iuu6VXQajm/view?usp=sharing</p>
-    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
-    </div>
+            </section>
+            <h3>Sources</h3>
+            <ul class="urls">
+                                <li property="url"><a href="https://drive.google.com/file/d/1HzDhPF1JwobzpHISYWcBd2iuu6VXQajm/view?usp=sharing" target="_blank">https://drive.google.com/file/d/1HzDhPF1JwobzpHISYWcBd2iuu6VXQajm/view?usp=sharing</a></li>
+                            </ul>
+            <a class="back" href="/submissions">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z" fill="#50555C"></path>
+                </svg>
+                <span>Back to submissions</span>
+            </a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="gutter">
+            <p>© <a href="https://versusvirus.ch" property="maintainer">Versus Virus</a> 2020. Made with ❤ in Switzerland.</p>
+        </div>
+    </footer>
 </body>
 </html>

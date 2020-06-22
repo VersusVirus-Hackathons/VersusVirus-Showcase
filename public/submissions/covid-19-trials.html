@@ -4,42 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css" />
-    <title>Covid 19 Trials</title>
+    <title>Covid 19 Trials — Versus Virus</title>
+    <style>
+        .page-header .gutter,
+        .page-main .gutter,
+        .page-footer .gutter {
+            max-width: 40em;
+        }
+    </style>
 </head>
 <body>
-    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
-    <p property="datePublished"><small>2020-05-31</small></p>
-    <h1 property="name">Covid 19 Trials</h1>
-    <p property="abstract"><strong>Discover clinical trials and the next solutions or vaccines against the virus</strong></p>
-    <section property="description">
-        <h3>Description</h3>
-        <p>Here is our vision: offering a one-stop-shop website for users (common people, scientists and industry) to localise geographically a clinical trial site studying or testing a cure/vaccine for Covid19 trials. We wish also to present informations about the development of these cures through user friendly data visualization. And are open for more advanced features such as predicting the success of a clinical trials.
+    <header class="page-header">
+        <div class="gutter">
+            <a href="https://www.versusvirus.ch/">
+                <img src="../logo.gif" alt="logo" title="Versus Virus" height="40" width="120" style="margin-top:4px;margin-bottom:-4px" />
+            </a>
+        </div>
+    </header>
+    <main class="page-main" vocab="http://schema.org/" typeof="CreativeWork">
+        <div class="gutter">
+            <p property="datePublished"><small><time datetime="2020-05-31">Sun May 31 2020</time></small></p>
+            <h1 property="name">Covid 19 Trials</h1>
+            <p property="abstract"><strong>Discover clinical trials and the next solutions or vaccines against the virus</strong></p>
+            <h3>Video</h3>
+            <p property="video"><a href="https://www.jottacloud.com/s/2082efc9de4f54a47589f1d38a36365a95e" target="_blank">https://www.jottacloud.com/s/2082efc9de4f54a47589f1d38a36365a95e</a></p>
+            <section property="description">
+                <h3>Description</h3>
+                <p>Here is our vision: offering a one-stop-shop website for users (common people, scientists and industry) to localise geographically a clinical trial site studying or testing a cure/vaccine for Covid19 trials. We wish also to present informations about the development of these cures through user friendly data visualization. And are open for more advanced features such as predicting the success of a clinical trials.
 
 We collect data from reliable sources (currently clinicaltrials.gov, to expand to EU, CH, CN and other databases).
 We provide an API exposing this data that can be used by other projects, and  https://coronareduit.ch a participant of VersusVirus wants already to use it, and we are interested in their data to better guide people coming from risk groups. </p>
-        <h3>Technologies used</h3>
-        <p>Slack, Coda.io, Zoom, Google Maps, React, Svelte.js, Tailwind, Javascript, Pzthon, Kubernetes, Postgres, Digital Ocean, Pulumi</p>
-        <h3>Accomplishments</h3>
-        <p>The website is already functional and serves as a working MVP.
+                <h3>Technologies used</h3>
+                <p>Slack, Coda.io, Zoom, Google Maps, React, Svelte.js, Tailwind, Javascript, Pzthon, Kubernetes, Postgres, Digital Ocean, Pulumi</p>
+                <h3>Accomplishments</h3>
+                <p>The website is already functional and serves as a working MVP.
 We have grown the team and attracted interest from other teams and mentors of Versus Virus</p>
-        <h3>Obstacles</h3>
-        <p>Unification of datasets between the various research centers to allow for the merging and focus of efforts.
+                <h3>Obstacles</h3>
+                <p>Unification of datasets between the various research centers to allow for the merging and focus of efforts.
 Web site development with Google Maps and React and Svelte.js and many nice technologies. Lucky to have a developer from New York on the team (Amrit)!
 </p>
-        <h3>Learnings</h3>
-        <p>We have learned the power of open collaboration with people from different backgrounds. 
+                <h3>Learnings</h3>
+                <p>We have learned the power of open collaboration with people from different backgrounds. 
 
 Thought has gone into the means of creating a standardized data entry content that encompasses the relevant fields and criteria required to achieve such a centralized data-set.</p>
-        <h3>Next steps</h3>
-        <p>We have prepared a roadmap to complete the development of the site and expand to more clinical trial registries
+                <h3>Next steps</h3>
+                <p>We have prepared a roadmap to complete the development of the site and expand to more clinical trial registries
 
 https://coda.io/@ludovic-claude/covid19trials-submission-for-versusvirus-may-2020/future-roadmap-3</p>
-    </section>
-    <h3>Video</h3>
-    <p property="video">https://www.jottacloud.com/s/2082efc9de4f54a47589f1d38a36365a95e</p>
-    <h3>Sources</h3>
-    <p property="url">https://covid19trials.world,https://beta.covid19trials.world,https://bit.ly/2TStBxZ</p>
-    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
-    </div>
+            </section>
+            <h3>Sources</h3>
+            <ul class="urls">
+                                <li property="url"><a href="https://covid19trials.world" target="_blank">https://covid19trials.world</a></li>
+                                <li property="url"><a href="https://beta.covid19trials.world" target="_blank">https://beta.covid19trials.world</a></li>
+                                <li property="url"><a href="https://bit.ly/2TStBxZ" target="_blank">https://bit.ly/2TStBxZ</a></li>
+                            </ul>
+            <a class="back" href="/submissions">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z" fill="#50555C"></path>
+                </svg>
+                <span>Back to submissions</span>
+            </a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="gutter">
+            <p>© <a href="https://versusvirus.ch" property="maintainer">Versus Virus</a> 2020. Made with ❤ in Switzerland.</p>
+        </div>
+    </footer>
 </body>
 </html>

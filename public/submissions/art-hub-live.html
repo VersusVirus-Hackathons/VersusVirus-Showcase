@@ -4,37 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css" />
-    <title>Art Hub Live</title>
+    <title>Art Hub Live — Versus Virus</title>
+    <style>
+        .page-header .gutter,
+        .page-main .gutter,
+        .page-footer .gutter {
+            max-width: 40em;
+        }
+    </style>
 </head>
 <body>
-    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
-    <p property="datePublished"><small>2020-05-31</small></p>
-    <h1 property="name">Art Hub Live</h1>
-    <p property="abstract"><strong>Connecting Live Artists, Arts and Audiences</strong></p>
-    <section property="description">
-        <h3>Description</h3>
-        <p>Art Hub transforms the relationship between artists and audiences forever by providing a digital space that is here to stay, creating a sustainable ecosystem that will complement traditional live performances as we have known them thus far.
+    <header class="page-header">
+        <div class="gutter">
+            <a href="https://www.versusvirus.ch/">
+                <img src="../logo.gif" alt="logo" title="Versus Virus" height="40" width="120" style="margin-top:4px;margin-bottom:-4px" />
+            </a>
+        </div>
+    </header>
+    <main class="page-main" vocab="http://schema.org/" typeof="CreativeWork">
+        <div class="gutter">
+            <p property="datePublished"><small><time datetime="2020-05-31">Sun May 31 2020</time></small></p>
+            <h1 property="name">Art Hub Live</h1>
+            <p property="abstract"><strong>Connecting Live Artists, Arts and Audiences</strong></p>
+            <h3>Video</h3>
+            <p property="video"><a href="https://youtu.be/ep4xHYMd7Dw" target="_blank">https://youtu.be/ep4xHYMd7Dw</a></p>
+            <section property="description">
+                <h3>Description</h3>
+                <p>Art Hub transforms the relationship between artists and audiences forever by providing a digital space that is here to stay, creating a sustainable ecosystem that will complement traditional live performances as we have known them thus far.
 
 Art Hub acts as a virtual marketplace providing the space for artists and individuals - like you and me - to connect, schedule and pay for live performances and events. Artists and audiences can create an entire new marketplace, scalable globally across cultures and national borders, opening up markets that were previously thought unimaginable. As an artist you simply need to create your profile and set up an event for which you will set the price, the timing and the maximum number of participants. Art Hub global audience will increase the artist network and provide a facility for the artist to interact with the audience by receiving direct feedback and chatting with them after the event. In this way we hope Art Hub will open and nourish new interactions and relationships between artist and audience, which, while not physical, will be direct, interactive and emotional.
 
 In addition, Art Hub is completely carbon-neutral! A percentage of every transaction is put towards funding street artists and a Sustainable Development Goal (SDG) project chosen by the artist directly. Thus, Art Hub not only supports social cohesion through local tradition and culture but all SDGs!</p>
-        <h3>Technologies used</h3>
-        <p>We have leveraged existing off the shelf software available combining customized WIX solution for website and ticketing with a variety of streaming solutions leveraging OBS and WMix.
+                <h3>Technologies used</h3>
+                <p>We have leveraged existing off the shelf software available combining customized WIX solution for website and ticketing with a variety of streaming solutions leveraging OBS and WMix.
 Our current website allows artists and individuals to register and create their own profile. It also offers the possibility to view upcoming events and buy tickets. We are currently testing different streaming options; our preferred method for the moment is direct streaming on a private page of the Art Hub website followed by an interactive section on Zoom with the artist and audience. During this beta phase performances are completely free but participants are given the performer’s Paypal account so that they are able to make a voluntary donation.</p>
-        <h3>Accomplishments</h3>
-        <p>In a short time period we have hosted two Swiss Artists on our platform performing during the Hackathon weekend: Eoghan O'Sullivan, singer/musician living by Leman Lake, dedicating "Gigs" song to the Versus Virus Hackathon, and Marc Brondex, visual artist living in Rolle performing live drawing show. This proved the relevance of our MVP in the Swiss Context and gives us confidence that this can expand further.</p>
-        <h3>Obstacles</h3>
-        <p>There is a high level of back-end support required to prepare the artists for a flawless high quality streaming, which is very time consuming and limits the current scalability of the project.</p>
-        <h3>Learnings</h3>
-        <p>Participation in the Swiss Versus Virus Hackathon has been an incredible networking opportunity and an amplifier for our project as we've received great feedback from mentors to refine our Sustainability strategy as well as being approached by Swiss potential partners to further nurture our project.</p>
-        <h3>Next steps</h3>
-        <p>Now that the prototype and proof of concept validity is confirmed in both Italy and Switzerland we want to move to a crowdfunding phase to fund the technical automation enhancements to enable scalability as well as marketing needed to accelerate the creation of content (artists) as well as user and community acceptance.</p>
-    </section>
-    <h3>Video</h3>
-    <p property="video">https://youtu.be/ep4xHYMd7Dw</p>
-    <h3>Sources</h3>
-    <p property="url">www.arthublive.com,https://www.facebook.com/arthublive/,https://www.youtube.com/channel/UCVJWC7Yv2lXmItIKpv24rwA,https://devpost.com/software/art-heist-bo01jw,https://www.instagram.com/arthublive/</p>
-    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
-    </div>
+                <h3>Accomplishments</h3>
+                <p>In a short time period we have hosted two Swiss Artists on our platform performing during the Hackathon weekend: Eoghan O'Sullivan, singer/musician living by Leman Lake, dedicating "Gigs" song to the Versus Virus Hackathon, and Marc Brondex, visual artist living in Rolle performing live drawing show. This proved the relevance of our MVP in the Swiss Context and gives us confidence that this can expand further.</p>
+                <h3>Obstacles</h3>
+                <p>There is a high level of back-end support required to prepare the artists for a flawless high quality streaming, which is very time consuming and limits the current scalability of the project.</p>
+                <h3>Learnings</h3>
+                <p>Participation in the Swiss Versus Virus Hackathon has been an incredible networking opportunity and an amplifier for our project as we've received great feedback from mentors to refine our Sustainability strategy as well as being approached by Swiss potential partners to further nurture our project.</p>
+                <h3>Next steps</h3>
+                <p>Now that the prototype and proof of concept validity is confirmed in both Italy and Switzerland we want to move to a crowdfunding phase to fund the technical automation enhancements to enable scalability as well as marketing needed to accelerate the creation of content (artists) as well as user and community acceptance.</p>
+            </section>
+            <h3>Sources</h3>
+            <ul class="urls">
+                                <li property="url"><a href="www.arthublive.com" target="_blank">www.arthublive.com</a></li>
+                                <li property="url"><a href="https://www.facebook.com/arthublive/" target="_blank">https://www.facebook.com/arthublive/</a></li>
+                                <li property="url"><a href="https://www.youtube.com/channel/UCVJWC7Yv2lXmItIKpv24rwA" target="_blank">https://www.youtube.com/channel/UCVJWC7Yv2lXmItIKpv24rwA</a></li>
+                                <li property="url"><a href="https://devpost.com/software/art-heist-bo01jw" target="_blank">https://devpost.com/software/art-heist-bo01jw</a></li>
+                                <li property="url"><a href="https://www.instagram.com/arthublive/" target="_blank">https://www.instagram.com/arthublive/</a></li>
+                            </ul>
+            <a class="back" href="/submissions">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z" fill="#50555C"></path>
+                </svg>
+                <span>Back to submissions</span>
+            </a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="gutter">
+            <p>© <a href="https://versusvirus.ch" property="maintainer">Versus Virus</a> 2020. Made with ❤ in Switzerland.</p>
+        </div>
+    </footer>
 </body>
 </html>

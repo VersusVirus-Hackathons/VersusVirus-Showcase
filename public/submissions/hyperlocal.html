@@ -4,16 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="project.css" />
-    <title>Hyperlocal</title>
+    <title>Hyperlocal — Versus Virus</title>
+    <style>
+        .page-header .gutter,
+        .page-main .gutter,
+        .page-footer .gutter {
+            max-width: 40em;
+        }
+    </style>
 </head>
 <body>
-    <div vocab="http://schema.org/" typeof="CreativeWork"></div>
-    <p property="datePublished"><small>2020-05-31</small></p>
-    <h1 property="name">Hyperlocal</h1>
-    <p property="abstract"><strong>Team 1024</strong></p>
-    <section property="description">
-        <h3>Description</h3>
-        <p>Loca.Ly : Know your neighborhood. 
+    <header class="page-header">
+        <div class="gutter">
+            <a href="https://www.versusvirus.ch/">
+                <img src="../logo.gif" alt="logo" title="Versus Virus" height="40" width="120" style="margin-top:4px;margin-bottom:-4px" />
+            </a>
+        </div>
+    </header>
+    <main class="page-main" vocab="http://schema.org/" typeof="CreativeWork">
+        <div class="gutter">
+            <p property="datePublished"><small><time datetime="2020-05-31">Sun May 31 2020</time></small></p>
+            <h1 property="name">Hyperlocal</h1>
+            <p property="abstract"><strong>Team 1024</strong></p>
+            <h3>Video</h3>
+            <p property="video"><a href="https://youtu.be/May0SH2yAKc" target="_blank">https://youtu.be/May0SH2yAKc</a></p>
+            <section property="description">
+                <h3>Description</h3>
+                <p>Loca.Ly : Know your neighborhood. 
 Whether it’s support for shopping for particularly vulnerable persons during COVID-19 lockdown, a lost cat, searching for a helping hand in the household: There is much that happens right around us, in the close vicinity of our neighborhood. 
 But how to reach out, and how to get to know about it? In particular during a lockdown situation, but also in the new normal.
 
@@ -23,23 +40,34 @@ We designed local.ly as a mobile-first solution based on a proximity approach.
 local.ly aims to reactivate local small business and connecting them to their neighborhood.
 This solution will also promote local information, municipality announcements, events, support, knowledge and service sharing between neighbors.
 </p>
-        <h3>Technologies used</h3>
-        <p>Slack, Miro, inVisionStudio, Google docs, iMovie</p>
-        <h3>Accomplishments</h3>
-        <p>Designing solution for real identified needs and getting positive feedback from the mentors.
+                <h3>Technologies used</h3>
+                <p>Slack, Miro, inVisionStudio, Google docs, iMovie</p>
+                <h3>Accomplishments</h3>
+                <p>Designing solution for real identified needs and getting positive feedback from the mentors.
 A company like "NextDoor" has been developping  a pretty close business.</p>
-        <h3>Obstacles</h3>
-        <p>Even if they were registered, members never joined when our Group got together.Getting the right slack channel for the group. </p>
-        <h3>Learnings</h3>
-        <p>I learned more about Switzerland and got to know of knew technology such as miro</p>
-        <h3>Next steps</h3>
-        <p>Attending incubator, applying for funds.Build an MVP.Test it with municipality</p>
-    </section>
-    <h3>Video</h3>
-    <p property="video">https://youtu.be/May0SH2yAKc</p>
-    <h3>Sources</h3>
-    <p property="url">https://versusvirus.slack.com/files/U011E51UYKA/F014CRGLUT0/lean_canvas.pdf?origin_team=T0115JP1WJZ&origin_channel=C014ME5SV9S</p>
-    <p property="maintainer"><a href="https://versusvirus.ch">Versus Virus</a></p>
-    </div>
+                <h3>Obstacles</h3>
+                <p>Even if they were registered, members never joined when our Group got together.Getting the right slack channel for the group. </p>
+                <h3>Learnings</h3>
+                <p>I learned more about Switzerland and got to know of knew technology such as miro</p>
+                <h3>Next steps</h3>
+                <p>Attending incubator, applying for funds.Build an MVP.Test it with municipality</p>
+            </section>
+            <h3>Sources</h3>
+            <ul class="urls">
+                                <li property="url"><a href="https://versusvirus.slack.com/files/U011E51UYKA/F014CRGLUT0/lean_canvas.pdf?origin_team=T0115JP1WJZ&amp;origin_channel=C014ME5SV9S" target="_blank">https://versusvirus.slack.com/files/U011E51UYKA/F014CRGLUT0/lean_canvas.pdf?origin_team=T0115JP1WJZ&amp;origin_channel=C014ME5SV9S</a></li>
+                            </ul>
+            <a class="back" href="/submissions">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z" fill="#50555C"></path>
+                </svg>
+                <span>Back to submissions</span>
+            </a>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="gutter">
+            <p>© <a href="https://versusvirus.ch" property="maintainer">Versus Virus</a> 2020. Made with ❤ in Switzerland.</p>
+        </div>
+    </footer>
 </body>
 </html>
