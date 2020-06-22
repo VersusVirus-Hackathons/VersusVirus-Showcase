@@ -2,15 +2,16 @@
   "name": "versusvirus-showcase",
   "version": "1.0.0",
   "description": "A collection of all submitted projects from the VersusVirus hackathons.",
-  "main": "scrape.js",
   "devDependencies": {
     "eta": "^1.1.1",
     "firebase-tools": "^8.4.2",
-    "website-scraper": "^4.2.1"
+    "node-fetch": "^2.6.0"
   },
   "scripts": {
     "serve": "npx firebase serve --only hosting",
-    "deploy": "npx firebase deploy"
+    "deploy": "npx firebase deploy",
+    "fetch": "node ./src/fetch.js",
+    "render": "node ./src/render.js"
   },
   "repository": {
     "type": "git",

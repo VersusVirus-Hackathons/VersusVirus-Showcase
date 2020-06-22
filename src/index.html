@@ -23,9 +23,16 @@
             <section class="projects">
                 <% it.projects.forEach(function(project){ %>
                 <article class="project" id="<%= project.name %>">
-                    <header><%= project.title %></header>
-                    <p class="tagline"><%= project.tagline %></p>
-                    <a class="link" href="<%= project.name %>.html">Read more…</a>
+                    <div class="thumbnail" style="background-image:url(<%= project.thumbnail %>);">
+                    </div>
+                    <div>
+                        <h2><%= project.title %></h2>
+                        <p class="tagline"><%= project.tagline %></p>
+                        <a class="link" href="<%= project.name %>.html">Read more…</a>
+                    </div>
+                    <div>
+                        <span class="topic <%= project.team.primaryTopic.id %>"><%= project.team.primaryTopic.title %></span>
+                    </div>
                 </article>
                 <% }) %>
             </section>

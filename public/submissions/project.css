@@ -67,6 +67,9 @@ body {
     background-color: #fff;
     padding: 1rem;
     width: 100%;
+
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 600px) {
@@ -77,9 +80,18 @@ body {
 }
 
 @media (min-width: 960px) {
-  .project {
-      flex: 0 0 calc(33.333% - 2rem);
-  }
+    .project {
+        flex: 0 0 calc(33.333% - 2rem);
+    }
+}
+
+.thumbnail {
+    border: 1px solid #e7e7e7;
+    width: 100%;
+    padding-bottom: 56%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .tagline {
@@ -100,6 +112,52 @@ body {
 }
 
 .page-footer>.gutter>p {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*
+----------------------------------------------------------
+Topic Colors
+----------------------------------------------------------
+*/
+.topic {
+    padding: 5px 8px;
+    border-radius: 13px;
+}
+
+.topic.afterthecrisis {
+    color: #040404;
+    background-color: #EEEEEE;
+}
+
+.topic.dataandfacts {
+    color: #3B2501;
+    background-color: #FFEAB6;
+}
+
+.topic.economical {
+    color: #400832;
+    background-color: #FFDAF6;
+}
+
+.topic.education {
+    color: #012524;
+    background-color: #C2F5E9;
+}
+
+.topic.prevention {
+    color: #102046;
+    background-color: #CFDFFF;
+}
+
+.topic.protection {
+    color: #0B1D05;
+    background-color: #D1F7C4;
+}
+
+.topic.supportrequestforhelp {
+    color: #102046;
+    background-color: #9CC7FF;
 }
