@@ -42,6 +42,23 @@ body {
     padding-bottom: 1rem;
 }
 
+.page-footer>.gutter>p {
+    width: 100%;
+    text-align: center;
+    font-size: 80%;
+}
+
+.page-footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*
+----------------------------------------------------------
+Styling for project listing
+----------------------------------------------------------
+*/
 .intro {
     background: linear-gradient(0deg, #fff0f0 0%, rgb(255, 0, 0) 100%);
     min-height: 25vh;
@@ -96,7 +113,6 @@ body {
     background-size: contain;
     background-position: center;
 }
-
 .tagline {
     --lh: 1.5rem;
     --max-lines: 2;
@@ -116,23 +132,6 @@ body {
     color: transparent;
 }
 
-.page-footer>.gutter>p {
-    width: 100%;
-    text-align: center;
-    font-size: 80%;
-}
-
-.page-footer a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-/*
-----------------------------------------------------------
-Topic Colors
-----------------------------------------------------------
-*/
 .topic {
     padding: 5px 8px;
     border-radius: 13px;
@@ -175,10 +174,58 @@ Topic Colors
 
 /*
 ----------------------------------------------------------
-Project page content
+Styling for project content
 ----------------------------------------------------------
 */
-.urls {
+.date {
+    margin: 0;
+    text-align: right;
+}
+
+.title {
+    font-size: 250%;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.gallery-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item img {
+    max-width: 166px;
+}
+
+.sources {
     max-width: 100%;
     overflow: hidden;
+}
+
+.source {
+    font-size: 80%;
 }

@@ -10,7 +10,7 @@ read("./src/project.html")
     data.projects.forEach((project) => {
       const rendered = templateEngine.render(template.toString(), project);
       write(`./public/submissions/${project.name}.html`, rendered)
-        .then(() => console.log(`wrote ${project.name}`))
+        .then(() => console.log(`wrote ${project.name}.html`))
         .catch((e) => console.error(e));
     });
   })
@@ -20,7 +20,7 @@ read("./src/index.html")
   .then((template) => {
     const rendered = templateEngine.render(template.toString(), data);
     write(`./public/submissions/index.html`, rendered)
-      .then(() => console.log(`wrote index`))
+      .then(() => console.log(`wrote index.html`))
       .catch((e) => console.error(e));
   })
   .catch((e) => console.error(e));

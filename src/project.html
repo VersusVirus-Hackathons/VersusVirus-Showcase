@@ -23,11 +23,17 @@
     </header>
     <main class="page-main" vocab="http://schema.org/" typeof="CreativeWork">
         <div class="gutter">
-            <p property="datePublished"><small><time datetime="<%= it.datePublished %>"><%= new Date(it.datePublished).toDateString() %></time></small></p>
-            <h1 property="name"><%~ it.title %></h1>
+            <p class="date" property="datePublished"><small><time datetime="<%= it.datePublished %>"><%= new Date(it.datePublished).toDateString() %></time></small></p>
+            <h1 class="title" property="name"><%~ it.title %></h1>
             <p property="abstract"><strong><%~ it.tagline %></strong></p>
+            <% if (it.youTubeVideoId) { %>
+            <div class='embed-container'>
+                <iframe src='https://www.youtube.com/embed/<%= it.youTubeVideoId %>' frameborder='0' allowfullscreen></iframe>
+            </div>
+            <% } else { %>
             <h3>Video</h3>
             <p property="video"><a href="<%~ it.videoUrl %>" target="_blank"><%~ it.videoUrl %></a></p>
+            <% } %>
             <section property="description">
                 <h3>Description</h3>
                 <p><%~ it.description %></p>
@@ -42,18 +48,21 @@
                 <h3>Next steps</h3>
                 <p><%~ it.nextSteps %></p>
             </section>
-            <h3>Sources</h3>
-            <ul class="urls">
-                <% it.urls.forEach(function(url){ %>
-                <li property="url"><a href="<%= url %>" target="_blank"><%= url %></a></li>
+            <% if (it.images.length) { %>
+            <h3>Gallery</h3>
+            <ul class="gallery">
+                <% it.images.forEach(function(image){ %>
+                <li class="gallery-item"><a href="<%= image %>" target="_blank"><img src="<%= image %>" /></a></li>
                 <% }) %>
             </ul>
-            <a class="back" href="/submissions">
-                <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.70711 0.292893C8.09763 0.683417 8.09763 1.31658 7.70711 1.70711L2.41421 7L7.70711 12.2929C8.09763 12.6834 8.09763 13.3166 7.70711 13.7071C7.31658 14.0976 6.68342 14.0976 6.29289 13.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289L6.29289 0.292893C6.68342 -0.0976311 7.31658 -0.0976311 7.70711 0.292893Z" fill="#50555C"></path>
-                </svg>
-                <span>Back to submissions</span>
-            </a>
+            <% } %>
+            <h3>Sources</h3>
+            <ul class="sources">
+                <% it.urls.forEach(function(url){ %>
+                <li class="source" property="source"><a href="<%= url %>" target="_blank"><%= url %></a></li>
+                <% }) %>
+            </ul>
+            <a class="back" href="/submissions">« Back to submissions</a>
         </div>
     </main>
     <footer class="page-footer">
