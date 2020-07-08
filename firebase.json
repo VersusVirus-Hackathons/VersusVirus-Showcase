@@ -5,6 +5,48 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/submissions",
+        "type": 301
+      },
+      {
+        "source": "/submissions/454499ba-d8c7-402e-becf-ca32981f40c6",
+        "destination": "/submissions/old-school.html",
+        "type": 301
+      },
+      {
+        "source": "/submissions/251fd5bc-0b0b-4255-8cee-467d3410faa9",
+        "destination": "/submissions/lokaler-einkauf.html",
+        "type": 301
+      },
+      {
+        "source": "/submissions/d7b9e08c-e6da-4b5c-ae58-194953cf1937",
+        "destination": "/submissions/art-hub-live.html",
+        "type": 301
+      },
+      {
+        "source": "/submissions/1796d464-6777-49fd-9317-828f8b38bcb0",
+        "destination": "/submissions/crowdy.html",
+        "type": 301
+      },
+      {
+        "source": "/submissions/2bb3f36f-cc3c-49c8-9de6-d741fb0e143e",
+        "destination": "/submissions/prevails.html",
+        "type": 301
+      },
+      {
+        "source": "/submissions/be46d18f-67d9-4b91-b48f-4d732c577180",
+        "destination": "/submissions/dolce-covida.html",
+        "type": 301
+      },
+      {
+        "source": "/submissions/81c38b0c-9755-416b-86cc-80faa72ffdac",
+        "destination": "/submissions/worldschool.html",
+        "type": 301
+      }
     ]
   }
 }
